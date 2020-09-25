@@ -2,8 +2,8 @@ const http = require('http')
 const fs = require('fs')
 
 const server = http.createServer((req, res)=>{
-  if (req.url == '/MiEvento.js'){
-    const rstream = fs.createReadStream('./MiEvento.js');
+  if (req.url == '/script.js'){
+    const rstream = fs.createReadStream('./script.js');
     res.setHeader('Content-Type', 'text/javascript')
 
     rstream.on('data', (chunk)=> {
