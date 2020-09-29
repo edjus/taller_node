@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express App</title>
+    <script src="./public/script.js"></script>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+
+    <h1> Bienvenidx a Node-Express</h1>
+     <!--<button id="start"> Click para empezar! </button> --> 
+
+    <form id="formCrearUser">
+        <div>
+            <span><small>Nombre</small></span>
+            <input type="text" id="txtNombre" name="nombre"/>
+        </div>
+        <div>
+            <span><small>Apellido</small></span>
+            <input type="text" id="txtApellido" name="apellido"/>
+        </div>
+    </form>
+    <button id="btnGuardar" onclick="guardar()">Guardar</button>
+
+    <div>
+        <ul id="users-list">
+        </ul>
+    </div>
+</body>
+</html>
